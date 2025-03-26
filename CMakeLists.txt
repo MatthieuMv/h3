@@ -454,12 +454,6 @@ if(DOXYGEN_FOUND AND ENABLE_DOCS)
         WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/dev-docs
         COMMENT "Generating API documentation with Doxygen"
         VERBATIM)
-else()
-    add_custom_target(
-        docs
-        echo
-        "Doxygen was not installed when CMake was run or ENABLE_DOCS was OFF. Check that Doxygen is installed and rerun `cmake .`"
-        VERBATIM)
 endif()
 
 # Metadata for bindings
